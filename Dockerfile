@@ -2,7 +2,7 @@ FROM ilovintit/php71-apache-with-node
 MAINTAINER ilovinti <ilovintit@gmail.com>
 
 #安装redis
-RUN apt-get update && apt-get install redis-server
+RUN apt-get -y update && apt-get install -y redis-server
 
 #部署代码
 RUN mkdir -p /app
